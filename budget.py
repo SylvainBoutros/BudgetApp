@@ -95,12 +95,3 @@ def create_spend_chart(categories):
             chart += "\n"
 
     return chart
-
-
-food = Category("Food")
-food.deposit(900, "deposit")
-food.withdraw(45.67, "milk, cereal, eggs, bacon, bread")
-entertainment = Category("Entertainment")
-food.transfer(20, entertainment)
-actual = print(food)
-expected = print(f"*************Food*************\ndeposit                 900.00\nmilk, cereal, eggs, bac -45.67\nTransfer to Entertainme -20.00\nTotal: 834.33")
